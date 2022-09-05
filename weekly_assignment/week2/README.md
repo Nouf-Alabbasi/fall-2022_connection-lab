@@ -5,6 +5,7 @@ Your HTML file must contain (not limited to)
 - an image
 - a video
 - p tag
+
 - headings
 - a tag<br>
 In your css, try to implement flex in some part of the page.<br>
@@ -22,3 +23,8 @@ but I wanted to try to keep the project as the center of attenction so I moved t
 <p align="center">
   <img src="https://github.com/Nouf-Alabbasi/fall-2022_connection-lab/blob/main/weekly_assignment/week2/w2.png" height="300"/>
 </p>
+This is how the final website looks like.
+<p align="center">
+  <img height="300" alt="Screen Shot 2022-09-05 at 3 08 35 AM" src="https://user-images.githubusercontent.com/83579909/188336984-550d89ae-17d3-4fed-8108-aa2ed68f1ee1.png">
+</p>
+  
