@@ -1,4 +1,4 @@
-link:<br>
+link: https://nouf-alabbasi.github.io/fall-2022_connection-lab/weekly_assignment/week2/wireframe1.html <br>
 ### Assignment: <br>
 MAKE a webpage version of the wireframe you have designed. Your assignment should include a .html file and a .css file.
 Your HTML file must contain (not limited to)
