@@ -23,8 +23,8 @@ but I wanted to try to keep the project as the center of attenction so I moved t
 <p align="center">
   <img src="https://github.com/Nouf-Alabbasi/fall-2022_connection-lab/blob/main/weekly_assignment/week2/w2.png" height="300"/>
 </p>
-This is how the final website looks like.
+This is how the final website looks like. I embided my p5js file into it so that the project remains interactive, used a few divs to arrange all the elements and used justify-content and align-items to center the project demo and description in the center of the page. I attempted to use it to align other elements but it got complicated trying to understand how the containers interacted with each other so I alighend some of them using the position attribute instead 
 <p align="center">
-  <img height="300" alt="Screen Shot 2022-09-05 at 3 08 35 AM" src="https://user-images.githubusercontent.com/83579909/188336984-550d89ae-17d3-4fed-8108-aa2ed68f1ee1.png">
+  <img height="300" alt="Screen Shot 2022-09-05 at 3 08 35 AM" src="https://github.com/Nouf-Alabbasi/fall-2022_connection-lab/blob/main/weekly_assignment/week2/webpage.png">
 </p>
   
