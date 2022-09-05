@@ -83,13 +83,26 @@ html, body {
 
 }
 
-#char_img{
+/* #char_img{
+    background-color: red;
     z-index: 0;
+    left: 0;
     position:absolute;
     top: 0;
-    display: flex;
-    align-items: flex-start;
+    /* display: flex;
+    justify-content: start; */
     /* display: flex; */
+
+#content {
+    position: relative;
+    z-index: 0;
+}
+#content img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transform: scaleY(-1);
+
 }
 
 body{
