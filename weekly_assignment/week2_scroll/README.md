@@ -29,8 +29,9 @@ then the user is prompted to continue scrolling and the webpage becomes darker. 
   <img src="website_6.png" height="300"/>
 </p>
 <p align="center">
-  <img src="website_3.png" height="300"/>
-</p>
-<p align="center">
   <img src="website_5.png" height="300"/>
 </p>
+<p align="center">
+  <img src="website_3.png" height="300"/>
+</p>
+
