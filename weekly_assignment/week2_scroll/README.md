@@ -23,5 +23,14 @@ there is also the issue of the bottom div not fitting the entire screen after I 
 The website starts with a box at the bottom of the screen, the word "hello" appears once the user scrolls a bit. Confetti appears from under the box and the box leaves the screen by going down.
 then the user is prompted to continue scrolling and the webpage becomes darker. at the end there is a button and if the user presses it the room/office is lit up and a person appears and instructs the user to add or subract by pressing the + or - button.
 <p align="center">
+  <img src="website_2.png" height="300"/>
+</p>
+<p align="center">
+  <img src="website_6.png" height="300"/>
+</p>
+<p align="center">
   <img src="website_3.png" height="300"/>
+</p>
+<p align="center">
+  <img src="website_5.png" height="300"/>
 </p>
