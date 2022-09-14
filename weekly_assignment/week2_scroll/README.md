@@ -3,6 +3,7 @@
 <br>
 link : https://nouf-alabbasi.github.io/fall-2022_connection-lab/weekly_assignment/week2_scroll/index.html <br>
 The purpose of this website is to teach addition in a fun way where the user searches for the values scattered around the web page and adds them and increments in the value to win.
+
 ## Wireframe
 I first used drew some wireframe ideas on sticky notes and lined them up to mimic scrolling and settled for this wireframe.
 <p align="center">
