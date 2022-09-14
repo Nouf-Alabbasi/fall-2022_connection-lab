@@ -11,7 +11,7 @@
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap" rel="stylesheet"> -->
-
+	<link rel="icon" href="tab_icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;900&display=swap" rel="stylesheet">
@@ -41,13 +41,18 @@
         <div class="instructions_dark" id="inst_2" > down . . . </div>
         <div id="button"> <p id="button_text"> click me</p></div>
         <div id="person"> <img src="person.png" alt="" width="100%"> </div>
-        <div id="wall"> <p id="bubble_text"> Hi, you can use the buttons on the left to add or subtract 1 from the number in the next text bubble!</p></p></div>
-        <div id="wall_2"> <p id="bubble_text_2">100</p> </div>
+        <div id="wall"> 
+            <p class="bubble_text" id="wall_text_1"> Hi, you can use the buttons on the left to add or subtract 1 from the number in the next text bubble!</p> 
+            <p class="bubble_text" id = "wall_text_2"> find the two numbers randomly placed on this page and add them and input the value in the next bubble</p>
+        </div>
+        <div id="wall_2"> <p id="bubble_text_2">0</p> </div>
 
         <div id="math_btn_add" class="math">  +  </div>
         <div id="math_btn_minus" class="math"> - </div>
-
     </div>
+
+    <div class="numbers" id="number_1"> 1 </div>
+    <div class="numbers" id="number_2"> 2 </div>
 
 </body>
 </html>
