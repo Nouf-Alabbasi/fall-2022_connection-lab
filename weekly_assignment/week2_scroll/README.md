@@ -1,5 +1,7 @@
+
 # js event listener
 <br>
+link : https://nouf-alabbasi.github.io/fall-2022_connection-lab/weekly_assignment/week2_scroll/index.html
 The purpose of this website is to teach addition in a fun way where the user searches for the values scattered around the web page and adds them and increments in the value to win.
 <br>
 ## Wireframe
@@ -32,5 +34,15 @@ I noticed after saving the files that a file called scroll.html was being genera
 The website starts with a box at the bottom of the screen, the word "hello" appears once the user scrolls a bit. Confetti appears from under the box and the box leaves the screen by going down.
 then the user is prompted to continue scrolling and the webpage becomes darker. at the end there is a button and if the user presses it the room/office is lit up and a person appears and instructs the user to add or subract by pressing the + or - button.
 <p align="center">
+  <img src="website_2.png" height="300"/>
+</p>
+<p align="center">
+  <img src="website_6.png" height="300"/>
+</p>
+<p align="center">
+  <img src="website_5.png" height="300"/>
+</p>
+<p align="center">
   <img src="website_3.png" height="300"/>
 </p>
+
