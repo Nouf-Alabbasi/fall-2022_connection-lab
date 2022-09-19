@@ -16,7 +16,7 @@ Later I decided to allow the users to generate characters with select features a
 
 ### get data in google sheets
 #### summary of steps
-* create an API key and link (through this [link](https://sheetdb.io/))
+* create an API key and link for the [spreadsheet](https://docs.google.com/spreadsheets/d/1O6JPyFCfs4OPS5NSWxu3H6cqa-PM5uxz5VB8dJgQAq0/edit#gid=0) (through this [link](https://sheetdb.io/))
 * this creates this [json file](https://sheetdb.io/api/v1/kiyrgijfayuro)
 * then I would access this file in my javascript file
 ```
