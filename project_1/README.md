@@ -7,6 +7,10 @@ the user would be allowed people to enter in details of a person’s features (h
 - [ ] learn to write data into google sheets
 - [ ] figure out a way to display all the previous user's characters
 - [ ] figure out how to use the data from the sheets with p5js
+### initial wireframe
+<p align="center">
+  <img src="wireframe_1.png" height="300"/>
+</p>
 
 ## steps
 ### idea research
@@ -16,7 +20,7 @@ Later I decided to allow the users to generate characters with select features a
 
 ### get data in google sheets
 #### summary of steps
-* create an API key and link (through this [link](https://sheetdb.io/))
+* create an API key and link for the [spreadsheet](https://docs.google.com/spreadsheets/d/1O6JPyFCfs4OPS5NSWxu3H6cqa-PM5uxz5VB8dJgQAq0/edit#gid=0) (through this [link](https://sheetdb.io/))
 * this creates this [json file](https://sheetdb.io/api/v1/kiyrgijfayuro)
 * then I would access this file in my javascript file
 ```
@@ -47,6 +51,7 @@ To solve this problem I have two options, use a [function that checks if the inp
 ### display all the previous user's characters
 I first wanted to check how p5js can be incorporated with html. Once I figured out how to do that in the first [draft of the website](https://nouf-alabbasi.github.io/fall-2022_connection-lab/project_1/draft_1/index.html), I now had to figure out how to display all the other user's charecters.<br>
 One way was to display [mutliple canvases](https://nouf-alabbasi.github.io/fall-2022_connection-lab/project_1/draft_2/index.html) but that looked like it would get complicated and difficult to scale and manage really quicky.<br>
-The other idea was to create a carousel like element with buttons that could be increment and reduced an "index" value. and the "index" value would serve to represent the index of the row to be accesed.
+The other idea was to create a carousel like element with buttons that could be increment and reduced an "index" value. and the "index" value would serve to represent the index of the row to be accesed.<br>
+another issue here was that I so far can't access the vairables used in the fetch function in the p5js code. I tried to create a global variable that would redfined locally but as expected that variable definition was only local.
 
 
