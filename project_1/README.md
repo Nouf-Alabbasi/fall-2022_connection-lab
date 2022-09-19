@@ -47,6 +47,7 @@ To solve this problem I have two options, use a [function that checks if the inp
 ### display all the previous user's characters
 I first wanted to check how p5js can be incorporated with html. Once I figured out how to do that in the first [draft of the website](https://nouf-alabbasi.github.io/fall-2022_connection-lab/project_1/draft_1/index.html), I now had to figure out how to display all the other user's charecters.<br>
 One way was to display [mutliple canvases](https://nouf-alabbasi.github.io/fall-2022_connection-lab/project_1/draft_2/index.html) but that looked like it would get complicated and difficult to scale and manage really quicky.<br>
-The other idea was to create a carousel like element with buttons that could be increment and reduced an "index" value. and the "index" value would serve to represent the index of the row to be accesed.
+The other idea was to create a carousel like element with buttons that could be increment and reduced an "index" value. and the "index" value would serve to represent the index of the row to be accesed.<br>
+another issue here was that I so far can't access the vairables used in the fetch function in the p5js code. I tried to create a global variable that would redfined locally but as expected that variable definition was only local.
 
 
