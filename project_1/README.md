@@ -7,6 +7,10 @@ the user would be allowed people to enter in details of a person’s features (h
 - [ ] learn to write data into google sheets
 - [ ] figure out a way to display all the previous user's characters
 - [ ] figure out how to use the data from the sheets with p5js
+### initial wireframe
+<p align="center">
+  <img src="wireframe_1.png" height="300"/>
+</p>
 
 ## steps
 ### idea research
