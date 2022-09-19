@@ -3,7 +3,7 @@
 
 var hair_color;
 
-function getData(){
+// function getData(){
     var apiUrl = 'https://sheetdb.io/api/v1/kiyrgijfayuro';
     var char_spec=[]
 
@@ -36,10 +36,12 @@ function getData(){
 
         hair_color = one_char[1];
         console.log(hair_color);
+        document.getElementById("hair_color").innerHTML = hair_color;
         
           
     }).catch(err => {
         console.log(err);
     });
-}
+// }
+
 console.log(hair_color);
