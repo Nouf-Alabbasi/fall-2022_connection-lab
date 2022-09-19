@@ -25,6 +25,8 @@ for(let i =0; i <data.length;i++){
   console.log(data[i]);
 }
 ```
+[draft website](https://nouf-alabbasi.github.io/fall-2022_connection-lab/project_1/draft_4/index.html) that takes data from a spreadsheet and displays it in the html
+
 #### steps in details
 - this step was challenging because many of the tutorials I looked at had assumptions about what I know when it comes to APIs and js. so they went from 1 to 100 pretty quick when it comes to the difficulty.
 - This meant that debugging was really hard
@@ -42,6 +44,9 @@ for(let i =0; i <data.length;i++){
 I started to brain storm how the data from the user woud be entered. The idea I had of for this was an input text box. The problem with that the user could enter invalid color value. 
 To solve this problem I have two options, use a [function that checks if the input is a valid color](https://stackoverflow.com/questions/48484767/javascript-check-if-string-is-valid-css-color), or use buttons with limited options that users can click.
 
-### get data in google sheets
+### display all the previous user's characters
+I first wanted to check how p5js can be incorporated with html. Once I figured out how to do that in the first [draft of the website](https://nouf-alabbasi.github.io/fall-2022_connection-lab/project_1/draft_1/index.html), I now had to figure out how to display all the other user's charecters.<br>
+One way was to display [mutliple canvases](https://nouf-alabbasi.github.io/fall-2022_connection-lab/project_1/draft_2/index.html) but that looked like it would get complicated and difficult to scale and manage really quicky.<br>
+The other idea was to create a carousel like element with buttons that could be increment and reduced an "index" value. and the "index" value would serve to represent the index of the row to be accesed.
 
 
