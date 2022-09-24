@@ -29,7 +29,7 @@ for(let i =0; i <data.length;i++){
   console.log(data[i]);
 }
 ```
-[draft website](https://nouf-alabbasi.github.io/fall-2022_connection-lab/project_1/draft_4/index.html) that takes data from a spreadsheet and displays it in the html
+[draft website](/draft_4/index.html) that takes data from a spreadsheet and displays it in the html
 
 #### steps in details
 - this step was challenging because many of the tutorials I looked at had assumptions about what I know when it comes to APIs and js. so they went from 1 to 100 pretty quick when it comes to the difficulty.
