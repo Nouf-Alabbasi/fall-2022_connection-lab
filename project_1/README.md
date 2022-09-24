@@ -7,10 +7,6 @@ the user would be allowed people to enter in details of a person’s features (h
 - [ ] learn to write data into google sheets
 - [ ] figure out a way to display all the previous user's characters
 - [ ] figure out how to use the data from the sheets with p5js
-### initial wireframe
-<p align="center">
-  <img src="imgs/wirefram+documentation/wireframe_1.png" height="300"/>
-</p>
 
 ## steps
 ### idea research
@@ -66,12 +62,28 @@ canvas = new p5(function (p) {
      }
     }, "canvas-div");
 ```
-([my innetial code is here](https://nouf-alabbasi.github.io/fall-2022_connection-lab/project_1/draft_6/index.html))I faced a problem where when I added in my  CreateCat function I was getting things like <b>StrokeWeight not defined</b> or <b>fill isn't defined</b>. I looked online but couldn't find a similar problem. I tried to add in the code in the draw function (that seemed like a good temparary solution becuase the fucntion is only written once and a for loop calls it repeatdly). However, when I tried to run it I got an erro; <b>Bakcground not defined</b>. This was intresting becuase it used to work fine, and I realized that I need to add <b>p.</b> before those the p5js functions I used for each canvas, so I recreated the CreateCat function with all the <b>p.</b> and it worked.
+([my innetial code is here](https://nouf-alabbasi.github.io/fall-2022_connection-lab/project_1/draft_6/index.html))I faced a problem where when I added in my  CreateCat function I was getting things like <b>StrokeWeight not defined</b> or <b>fill isn't defined</b>. I looked online but couldn't find a similar problem. I tried to add in the code in the draw function (that seemed like a good temparary solution becuase the fucntion is only written once and a for loop calls it repeatdly). However, when I tried to run it I got an erro; <b>Bakcground not defined</b>. This was intresting becuase it used to work fine, and I realized that I need to add <b>p.</b> before those the p5js functions I used for each canvas, so I recreated the CreateCat function with all the <b>p.</b> and it worked.<br> [Here is the current website.](https://nouf-alabbasi.github.io/fall-2022_connection-lab/project_1/draft_7/index.html)
+
 
 #### accessing data from the json file within the p5js code
 The other idea was to create a carousel like element with buttons that could be increment and reduced an "index" value. and the "index" value would serve to represent the index of the row to be accesed.<br>
 another issue here was that I so far can't access the vairables used in the fetch function in the p5js code. I tried to create a global variable that would redfined locally but as expected that variable definition was only local. <br>
 
-
-
-
+## design aspects
+### initial wireframe
+<p align="center">
+  <img src="imgs/wirefram+documentation/wireframe_1.png" height="300"/>
+</p>
+### website stages
+<p align="center">
+  <img src="imgs/wirefram+documentation/website_example/1.png" height="300"/>
+</p>
+<p align="center">
+  <img src="imgs/wirefram+documentation/website_example/2.png" height="300"/>
+</p>
+<p align="center">
+  <img src="imgs/wirefram+documentation/website_example/3.png" height="300"/>
+</p>
+<p align="center">
+  <img src="imgs/wirefram+documentation/website_example/4.png" height="300"/>
+</p>

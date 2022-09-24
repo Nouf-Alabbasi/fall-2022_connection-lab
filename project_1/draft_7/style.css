@@ -43,11 +43,11 @@ body{
     display: grid;
     grid-template-columns: auto auto;
     /* padding: 10px; */
-    background-color: #CBDFBD;
+    /* background-color: #CBDFBD;
     border-radius: 50px;
     width: 400px;
     margin:auto;
-    margin-left: 0;
+    margin-left: 0; */
 
     /* background-color: #CBDFBD;
     display: grid;
@@ -65,7 +65,7 @@ body{
     box-shadow: 3px 2px #BED7AC;  */
     /* position: absolute; */
     /* right: 20%;*/
-}
+/* } */
 
  .categories{
     /* center if screen is smaller than X  */
@@ -125,10 +125,11 @@ p{
 }
 
 textarea{
+
     border: 2px solid #ccc;
     border-radius: 4px;
-    resize: inherit;
+    width: 1000px;
     height: 15px;
     justify-content: center;
     margin-left: 5px;
-} */
+} 
