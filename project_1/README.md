@@ -74,16 +74,25 @@ another issue here was that I so far can't access the vairables used in the fetc
 <p align="center">
   <img src="imgs/wirefram+documentation/wireframe_1.png" height="300"/>
 </p>
+
 ### website stages
+##### basic layout
+
 <p align="center">
   <img src="imgs/wirefram+documentation/website_example/1.png" height="300"/>
 </p>
+
+##### adding patters to the background
+
 <p align="center">
   <img src="imgs/wirefram+documentation/website_example/2.png" height="300"/>
 </p>
 <p align="center">
   <img src="imgs/wirefram+documentation/website_example/3.png" height="300"/>
 </p>
+
+##### the pattern I decided on going with
+
 <p align="center">
   <img src="imgs/wirefram+documentation/website_example/4.png" height="300"/>
 </p>
