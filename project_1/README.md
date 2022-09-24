@@ -49,11 +49,12 @@ I started to brain storm how the data from the user woud be entered. The idea I 
 To solve this problem I have two options, use a [function that checks if the input is a valid color](https://stackoverflow.com/questions/48484767/javascript-check-if-string-is-valid-css-color), or use buttons with limited options that users can click.
 
 ### display all the previous user's characters
-####creating multiple canvases
+#### creating multiple canvases
 I first wanted to check how p5js can be incorporated with html. Once I figured out how to do that in the first [draft of the website](https://nouf-alabbasi.github.io/fall-2022_connection-lab/project_1/draft_1/index.html), I now had to figure out how to display all the other user's charecters.<br>
 One way was to display [mutliple canvases](https://nouf-alabbasi.github.io/fall-2022_connection-lab/project_1/draft_2/index.html) but that looked like it would get complicated and difficult to scale and manage really quicky.<br>
 I ended up creating canvas instances everytime a button is pressed like in this [code](https://stackoverflow.com/questions/55384639/connecting-the-html-input-page-with-p5-js). <br>
-'''    canvas = new p5(function (p) {
+```
+canvas = new p5(function (p) {
       p.setup = function (){
         p.createCanvas(canvasWidth, canvasHeight);
         p.background("red");
@@ -63,10 +64,11 @@ I ended up creating canvas instances everytime a button is pressed like in this 
         p.stroke(0);
         p.rect(p.width/5, p.height/5, p.width/5 * 3, p.height/5 * 3);
      }
-    }, "canvas-div");'''
+    }, "canvas-div");
+```
 ([my innetial code is here](https://nouf-alabbasi.github.io/fall-2022_connection-lab/project_1/draft_6/index.html))I faced a problem where when I added in my  CreateCat function I was getting things like <b>StrokeWeight not defined</b> or <b>fill isn't defined</b>. I looked online but couldn't find a similar problem. I tried to add in the code in the draw function (that seemed like a good temparary solution becuase the fucntion is only written once and a for loop calls it repeatdly). However, when I tried to run it I got an erro; <b>Bakcground not defined</b>. This was intresting becuase it used to work fine, and I realized that I need to add <b>p.</b> before those the p5js functions I used for each canvas, so I recreated the CreateCat function with all the <b>p.</b> and it worked.
 
-####accessing data from the json file within the p5js code
+#### accessing data from the json file within the p5js code
 The other idea was to create a carousel like element with buttons that could be increment and reduced an "index" value. and the "index" value would serve to represent the index of the row to be accesed.<br>
 another issue here was that I so far can't access the vairables used in the fetch function in the p5js code. I tried to create a global variable that would redfined locally but as expected that variable definition was only local. <br>
 
