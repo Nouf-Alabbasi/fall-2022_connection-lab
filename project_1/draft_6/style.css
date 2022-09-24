@@ -1,0 +1,20 @@
+body{
+    background-color: lightcyan;
+    margin : 0;
+    padding: 0;
+    align-items: center;
+    display: block;
+}
+
+#container{
+    margin: 20% auto;
+    width: 40%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.padded{
+    margin: 10px;
+}
