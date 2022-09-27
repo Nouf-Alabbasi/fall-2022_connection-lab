@@ -1,11 +1,12 @@
-let hair_color;
-let dataIsReady = false;
 
 // let apiUrl = 'https://sheetdb.io/api/v1/kiyrgijfayuro';
 // let char_spec=[]
 
 
 window.addEventListener("load", ()=> {
+  let hair_color= "red";
+  let dataIsReady = false;
+
     // fetch(apiUrl)
     // .then(resp => resp.json())
     // .then(data => {
@@ -22,20 +23,24 @@ window.addEventListener("load", ()=> {
     .then( resp => resp.json())
     .then(data => {
 
-        console.log(data);
+
         // astros = data.people;
         dataIsReady = true;
-        console.log(dataIsReady);
+
 
         // console.log(data[3]);
-        // for (const [key, value] of Object.entries(data[3])) {
-        //   if (key == "hair_color")
-        //   {
-        //     hair_color = value.toString();
-        //     console.log(hair_color);
-        //   }
-        // }
-        // dataIsReady = true;
+        for (const [key, value] of Object.entries(data[3])) {
+          if (key == "hair_color")
+          {
+            hair_color = value.toString();
+            document.getElementById("p1").innerHTML = hair_color;
+            console.log(hair_color);
+          }
+        }
+        document.getElementById("p2").setAttribute("booll", '');
+        document.getElementById("p2").setAttribute = true;
+        document.getElementById("p2").innerHTML = true;
+        dataIsReady = true;
 
 
           
@@ -43,11 +48,14 @@ window.addEventListener("load", ()=> {
     // .catch(err => {
     //     console.log(err);
     // });
+    // if ( document.getElementById("p2").value != null){
+    //   console.log("outside", document.getElementById("p1").value)
+    //   console.log("here");
+    // }
+    document.getElementById("p1").innerHTML = "thing";
 })
 
-if (dataIsReady){
-  console.log("outside",hair_color);
-}
+
 
 
 // let cat1;

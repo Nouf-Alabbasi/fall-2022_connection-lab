@@ -10,9 +10,14 @@ the user would be allowed people to enter in details of a person’s features (h
 
 ## steps
 ### idea research
+#### stage 1
 I looked at many websites that used data to create an engaging experience. This is [one that I found interesting](http://rossgoodwin.com/clock/). 
 I also found a [script of code that generated a json file with random values](https://www.google.com/url?q=https://json-generator.com/%23&sa=D&source=docs&ust=1663593434633689&usg=AOvVaw2qFZ_5_fmgeoMX7uwXj4jc). I thought I could use this to generate a list of charecter features and display them using p5js on the website.
 Later I decided to allow the users to generate characters with select features and then be able to view all the previous charecters.
+#### target audience
+people who live on campus and know about the campus cats
+#### what would the website provide?
+a place where people can create their own campus cat that would be added to the list of cats that inhibit this website.
 
 ### get data in google sheets
 #### summary of steps
@@ -96,3 +101,5 @@ another issue here was that I so far can't access the vairables used in the fetc
 <p align="center">
   <img src="imgs/wirefram+documentation/website_example/4.png" height="300"/>
 </p>
+
+
