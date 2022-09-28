@@ -11,7 +11,7 @@ let nose_clr = document.getElementById("nose_clr").value;
 
 // let features = ["fur_color" ,	"ear_1" ,	"ear_2" ,	"eye_rt" ,	"eye_lft" ,	"nose_clr"];
 window.addEventListener("load", ()=> {
-
+  createP5 ();
   if(fur_color != document.getElementById("fur_color").value || 
      ear_1 != document.getElementById("ear_1").value ||
      ear_2 != document.getElementById("ear_2").value ||
