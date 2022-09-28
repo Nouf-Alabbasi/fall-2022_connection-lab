@@ -1,0 +1,143 @@
+<!-- this takes info and sends it to the sheets -->
+<!--  to do:
+    center all elements when screen is less than x
+    X add defualt values to the function 
+    add check if color is a real color
+
+    ! add a color grid?
+    ? are the input feilds and their titles clearly associated-->
+
+<!-- notes:
+    used a grid system for the input box to maintain alignment -->
+
+<!-- next steps -->
+<!-- 
+    add logic
+    deal with the button situation
+-->
+
+<!-- challenges 
+    being able to retreive the cat information (why? cuz of so many get and post req, had to alter my previous system to inlcude the api, was limited in terms of requests to the api)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>draft 12</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;900&family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="greeting">
+        <div id="greeting_txt_bx">
+            <div id="greeting_txt">
+                <center>
+                Hi! Welcom to website Cats! <br>
+                you've hear of campus cats! now be ready for <br><b>website cats!</b><br> a community of cats that inhibit this website
+                </center>
+            </div>
+            <button id="greeting_button">next</button>
+        </div>
+    </div>
+
+    <div id="overall_container">
+        
+        <div id ="The_canvas">
+            <div id="canvas-div">
+            </div>
+        </div>
+        <!-- <div id="container"> -->
+            <form class="container"  id="sheetdb-form" action="https://sheetdb.io/api/v1/c9ua82nq52ccc" method="POST">
+
+            <!-- </form>>  -->
+            <!-- </form>action="https://sheetdb.io/api/v1/c9ua82nq52ccc" method="POST" id="sheetdb-form"> -->
+                <div class="categories"> <p>cat name</p> </div> 
+                <div class="categories"> 
+                    <input name="data[user]" id="cat_name" placeholder="cat name...">
+                </div>
+
+                <div class="categories"> <p>fur color</p> </div> 
+                <div class="categories"> 
+                    <input type="color" name="data[fur_color]" id="fur_color" value="#172a3a">
+                </div>
+
+                <div class="categories"> <p>left ear color</p> </div> 
+                <div class="categories"> 
+                    <input type="color" name="data[ear_1]" id="ear_1" value="#172a3a">
+                </div>
+
+                <div class="categories"> <p>right ear color</p> </div> 
+                <div class="categories"> 
+                    <input name="data[ear_2]" id="ear_2" type="color" value="#09BC8A">
+                </div>
+
+                <div class="categories"> <p>left eye color</p> </div> 
+                <div class="categories"> 
+                    <input name="data[eye_lft]" id="eye_lft" type="color" value="#172a3a">
+                </div>
+
+                <div class="categories"> <p>right eye color</p> </div> 
+                <div class="categories"> 
+                    <input name="data[eye_rt]" id="eye_rt" type="color" value="#172a3a">
+                </div>
+
+
+                <div class="categories"> <p>nose color</p> </div> 
+                <div class="categories"> 
+                    <input name="data[nose_clr]" id="nose_clr"type="color" value="#FF958C">
+                </div>
+
+                <div class="categories"> 
+                    <button class ="button" type="button" id="create_cat">draw cat</button>
+                </div>
+                <div class="categories"> 
+                    <button class ="button" type ="submit" onclick="createCat_community();">add cat to community</button>
+                </div>
+
+              </form>
+              <script>
+                //   the reason this isn't in the script file is becuase for some reason this doesn't run early enough and the user is redirected by the api(the code is meant to prevent that)
+                // derived from the api tutorials
+                var form = document.getElementById('sheetdb-form');
+                if(form){
+                    form.addEventListener("submit", e => {
+                        e.preventDefault();
+                        fetch(form.action, {
+                            method : "POST",
+                            body: new FormData(document.getElementById("sheetdb-form")),
+                        }).then(
+                            response => response.json()
+                        ).then((html) => {
+                        // you can put any JS code here
+                            alert('your can has been added to as an inhabitant of this website!!\n\n scroll down to see the rest of the community!!')
+                        });
+                    });
+                }
+              </script>
+            <script src="javascript.js"></script>
+
+
+            <!-- <div class="categories"> </div>
+            <div class="button_div">
+                <input class ="button" type="button" value="create cat" onclick='createP5()'/>
+                <input class ="button" type="button" value="get cat twin cat" onclick='createCat_twin()'/>
+            </div>
+        </div>  -->
+        
+    <!-- </div> -->
+    <div id ="The_canvas_2">
+        <div id="canvas-second"></div>
+    </div>
+
+
+</body>
+</html>
