@@ -1,6 +1,4 @@
-// let dataIsReady = false;
 
-let current_user_cat = document.getElementById("cat_name").value;
 let fur_color = document.getElementById("fur_color").value;
 let ear_1 = document.getElementById("ear_1").value;
 let ear_2 = document.getElementById("ear_2").value;
