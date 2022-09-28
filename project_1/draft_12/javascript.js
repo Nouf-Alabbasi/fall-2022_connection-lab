@@ -178,12 +178,12 @@ function createCat_community (){
         let cats =[];
 
         p.setup = function (){
-          p.background("red");
           //   count how many charecters  
           while (features[i]) {
             i++;
           }
           p.createCanvas(width_full, width_full*i/1.4);
+          p.background("#F6F4D2");
           // createCanvas(500, 450 * i);
           let current_y_pos = width_full / 2;
           for (let a = 0; a < i; a++) {
