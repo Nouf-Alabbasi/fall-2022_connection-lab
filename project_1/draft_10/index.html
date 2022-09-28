@@ -44,7 +44,9 @@
             </div>
         </div>
         <!-- <div id="container"> -->
-            <form id="container" name="form2" id="sheetdb-form"> 
+            <form id="container" name="form2" id="sheetdb-form" action="https://sheetdb.io/api/v1/c9ua82nq52ccc" method="POST" id="sheetdb-form">
+
+            <!-- </form>>  -->
             <!-- </form>action="https://sheetdb.io/api/v1/c9ua82nq52ccc" method="POST" id="sheetdb-form"> -->
                 <div class="categories"> <p>cat name</p> </div> 
                 <div class="categories"> 
@@ -58,28 +60,28 @@
 
                 <div class="categories"> <p>left ear color</p> </div> 
                 <div class="categories"> 
-                    <input type="color" name="data[ear_1]" iid="ear_1" value="#172a3a">
+                    <input type="color" name="data[ear_1]" id="ear_1" value="#172a3a">
                 </div>
 
                 <div class="categories"> <p>right ear color</p> </div> 
                 <div class="categories"> 
-                    <input name="data[ear_2]" iid="ear_2" type="color" value="#09BC8A">
+                    <input name="data[ear_2]" id="ear_2" type="color" value="#09BC8A">
                 </div>
 
                 <div class="categories"> <p>left eye color</p> </div> 
                 <div class="categories"> 
-                    <input name="data[eye_lft]" iid="eye_lft" type="color" value="#172a3a">
+                    <input name="data[eye_lft]" id="eye_lft" type="color" value="#172a3a">
                 </div>
 
                 <div class="categories"> <p>right eye color</p> </div> 
                 <div class="categories"> 
-                    <input name="data[eye_rt]" iid="eye_rt" type="color" value="#172a3a">
+                    <input name="data[eye_rt]" id="eye_rt" type="color" value="#172a3a">
                 </div>
 
 
                 <div class="categories"> <p>nose color</p> </div> 
                 <div class="categories"> 
-                    <input name="data[nose_clr]" iid="nose_clr"type="color" value="#FF958C">
+                    <input name="data[nose_clr]" id="nose_clr"type="color" value="#FF958C">
                 </div>
 
                 <div class="categories"> </div>
@@ -92,22 +94,23 @@
               <script>
                 //   the reason this isn't in the script file is becuase for some reason this doesn't run early enough and the user is redirected by the api(the code is meant to prevent that)
                 // derived from the api tutorials
-                // var form = document.getElementById('sheetdb-form');
-                // if(form)
-                // {
-                //     form.addEventListener("submit", e => {
-                //     e.preventDefault();
-                //     fetch(form.action, {
-                //         method : "POST",
-                //         body: new FormData(document.getElementById("sheetdb-form")),
-                //     }).then(
-                //         response => response.json()
-                //     ).then((html) => {
-                //         // you can put any JS code here
-                //         alert('success')
-                //     });
-                //     });
-                // }
+                var form = document.getElementById('sheetdb-form');
+                if(form)
+                {
+                    form.addEventListener("submit", e => {
+                    e.preventDefault();
+                    fetch(form.action, {
+                        method : "POST",
+                        body: new FormData(document.getElementById("sheetdb-form")),
+                    }).then(
+                        response => response.json()
+                    ).then((html) => {
+                        // you can put any JS code here
+                        createP5()
+                        // alert('success')
+                    });
+                    });
+                }
 
                 function myPrint(myfile) {
                     var printdata = document.getElementById(myfile);

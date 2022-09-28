@@ -1,16 +1,30 @@
 // let dataIsReady = false;
 
-// let current_user_cat;
-// let fur_color;
-// let ear_1;
-// let ear_2;
-// let eye_rt;
-// let eye_lft;
-// let nose_clr;
+let current_user_cat = document.getElementById("cat_name").value;
+let fur_color = document.getElementById("fur_color").value;
+let ear_1 = document.getElementById("ear_1").value;
+let ear_2 = document.getElementById("ear_2").value;
+let eye_rt = document.getElementById("eye_rt").value;
+let eye_lft = document.getElementById("eye_lft").value;
+let nose_clr = document.getElementById("nose_clr").value;
 
 
 // let features = ["fur_color" ,	"ear_1" ,	"ear_2" ,	"eye_rt" ,	"eye_lft" ,	"nose_clr"];
-// window.addEventListener("load", ()=> {
+window.addEventListener("load", ()=> {
+
+  if(fur_color != document.getElementById("fur_color").value || 
+     ear_1 != document.getElementById("ear_1").value ||
+     ear_2 != document.getElementById("ear_2").value ||
+     eye_rt != document.getElementById("eye_rt").value ||
+     eye_lft != document.getElementById("eye_lft").value ||
+     nose_clr != document.getElementById("nose_clr").value)
+  {
+      console.log("changed");
+      createP5 ();
+  }
+  // }
+
+});
 //     var apiUrl = 'https://sheetdb.io/api/v1/kiyrgijfayuro';
 //     var char_spec=[]
 //     fetch(apiUrl)
@@ -46,7 +60,7 @@ function createP5 (){
       let posX = 400/2;
       let posY = 400/2;
       let fc_sz = 200;
-      current_user_cat = document.getElementById("cat_name").value;
+      // current_user_cat = document.getElementById("cat_name").value;
       fur_color = document.getElementById("fur_color").value;
       ear_1 = document.getElementById("ear_1").value;
       ear_2 = document.getElementById("ear_2").value;
