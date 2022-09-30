@@ -13,7 +13,8 @@ more information [here](https://docs.google.com/presentation/d/1DWSNe8sxxzLjyPBt
 - [x] figure out how to use the data from the sheets with p5js
 
 ## steps
-### idea research
+### 🐱idea research
+
 #### stage 1
 I looked at many websites that used data to create an engaging experience. This is [one that I found interesting](http://rossgoodwin.com/clock/). 
 I also found a [script of code that generated a json file with random values](https://www.google.com/url?q=https://json-generator.com/%23&sa=D&source=docs&ust=1663593434633689&usg=AOvVaw2qFZ_5_fmgeoMX7uwXj4jc). I thought I could use this to generate a list of charecter features and display them using p5js on the website.
@@ -26,7 +27,7 @@ people who live on campus and know about the campus cats
 #### what would the website provide?
 a place where people can create their own campus cat that would be added to the list of cats that inhibit this website.
 
-### get data from google sheets
+### 🐱get data from google sheets
 #### summary of steps
 * create an API key and link for the [spreadsheet](https://docs.google.com/spreadsheets/d/1O6JPyFCfs4OPS5NSWxu3H6cqa-PM5uxz5VB8dJgQAq0/edit#gid=0) (through this [link](https://sheetdb.io/))
 * this creates this [json file](https://sheetdb.io/api/v1/kiyrgijfayuro)
@@ -45,12 +46,12 @@ a place where people can create their own campus cat that would be added to the 
     - [https://www.geeksforgeeks.org/how-to-make-charts-using-data-from-google-sheets-in-javascript/](https://www.geeksforgeeks.org/how-to-make-charts-using-data-from-google-sheets-in-javascript/)
 
 
-### write data into google sheets
+### 🐱write data into google sheets
 I started to brainstorm how the data from the user woud be entered. The idea I had of for this was an input text box. The problem with that the user could enter invalid color value. 
 To solve this problem I have a few options, use a [function that checks if the input is a valid color](https://stackoverflow.com/questions/48484767/javascript-check-if-string-is-valid-css-color), or use buttons with limited options that users can click, or use a color picker in the input field. I went with the last option. I then used a form that would send all the data to the google sheets once the user submits the form.
 
 
-### display all the previous user's characters
+### 🐱display all the previous user's characters
 #### creating multiple canvases
 I first wanted to check how p5js can be incorporated with html. Once I figured out how to do that in the first [draft of the website](https://nouf-alabbasi.github.io/fall-2022_connection-lab/project_1/draft_1/index.html), I now had to figure out how to display all the other user's charecters.<br>
 One way was to display [mutliple canvases](https://nouf-alabbasi.github.io/fall-2022_connection-lab/project_1/draft_2/index.html) but that looked like it would get complicated and difficult to scale and manage really quicky.<br>
