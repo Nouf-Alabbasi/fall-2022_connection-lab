@@ -1,12 +1,16 @@
+# ✨Website Cats✨
+**link to the website:** [here](https://nouf-alabbasi.github.io/fall-2022_connection-lab/project_1/project_1/index.html)<br>
+note: after class Pangna Sun shared with me that he was able to add the auto update function to my website! the link to that is [here](https://nouf-alabbasi.github.io/fall-2022_connection-lab/project_1/Website_withUpdate/index.html)
+
 ## Idea
-My idea is to create an app that draw people from data in json files and using p5js. 
-the user would be allowed people to enter in details of a person’s features (hair color, eye color …) and get a p5js drawing of that person. The user would also be able to see all previous drawings of other people. 
+a place where people can create their own campus cat that would be added to the list of cats that inhibit this website.<br>
+more information [here](https://docs.google.com/presentation/d/1DWSNe8sxxzLjyPBtTeupjfqZsejL5A5J2tTNxXQ_rIk/edit?usp=sharing)
 
 ## plan
 - [x] learn to get data from google sheets
-- [ ] learn to write data into google sheets
-- [ ] figure out a way to display all the previous user's characters
-- [ ] figure out how to use the data from the sheets with p5js
+- [x] learn to write data into google sheets
+- [x] figure out a way to display all the previous user's characters
+- [x] figure out how to use the data from the sheets with p5js
 
 ## steps
 ### idea research
@@ -14,23 +18,19 @@ the user would be allowed people to enter in details of a person’s features (h
 I looked at many websites that used data to create an engaging experience. This is [one that I found interesting](http://rossgoodwin.com/clock/). 
 I also found a [script of code that generated a json file with random values](https://www.google.com/url?q=https://json-generator.com/%23&sa=D&source=docs&ust=1663593434633689&usg=AOvVaw2qFZ_5_fmgeoMX7uwXj4jc). I thought I could use this to generate a list of charecter features and display them using p5js on the website.
 Later I decided to allow the users to generate characters with select features and then be able to view all the previous charecters.
+#### stage 2
+the idea was changed to match a specific target audience. The final idea was a website called "Website Cats" where people create cats to grow the website cats community
+
 #### target audience
 people who live on campus and know about the campus cats
 #### what would the website provide?
 a place where people can create their own campus cat that would be added to the list of cats that inhibit this website.
 
-### get data in google sheets
+### get data from google sheets
 #### summary of steps
 * create an API key and link for the [spreadsheet](https://docs.google.com/spreadsheets/d/1O6JPyFCfs4OPS5NSWxu3H6cqa-PM5uxz5VB8dJgQAq0/edit#gid=0) (through this [link](https://sheetdb.io/))
 * this creates this [json file](https://sheetdb.io/api/v1/kiyrgijfayuro)
-* then I would access this file in my javascript file
-```
-<!-- returns each row -->
-for(let i =0; i <data.length;i++){ 
-  console.log(data[i]);
-}
-```
-[draft website](https://nouf-alabbasi.github.io/fall-2022_connection-lab/project_1/draft_4/index.html) that takes data from a spreadsheet and displays it in the html
+* then I would access this file in my javascript file<br>
 
 #### steps in details
 - this step was challenging because many of the tutorials I looked at had assumptions about what I know when it comes to APIs and js. so they went from 1 to 100 pretty quick when it comes to the difficulty.
@@ -46,8 +46,9 @@ for(let i =0; i <data.length;i++){
 
 
 ### write data into google sheets
-I started to brain storm how the data from the user woud be entered. The idea I had of for this was an input text box. The problem with that the user could enter invalid color value. 
-To solve this problem I have two options, use a [function that checks if the input is a valid color](https://stackoverflow.com/questions/48484767/javascript-check-if-string-is-valid-css-color), or use buttons with limited options that users can click.
+I started to brainstorm how the data from the user woud be entered. The idea I had of for this was an input text box. The problem with that the user could enter invalid color value. 
+To solve this problem I have a few options, use a [function that checks if the input is a valid color](https://stackoverflow.com/questions/48484767/javascript-check-if-string-is-valid-css-color), or use buttons with limited options that users can click, or use a color picker in the input field. I went with the last option. I then used a form that would send all the data to the google sheets once the user submits the form.
+
 
 ### display all the previous user's characters
 #### creating multiple canvases
@@ -67,12 +68,11 @@ canvas = new p5(function (p) {
      }
     }, "canvas-div");
 ```
-([my innetial code is here](https://nouf-alabbasi.github.io/fall-2022_connection-lab/project_1/draft_6/index.html))I faced a problem where when I added in my  CreateCat function I was getting things like <b>StrokeWeight not defined</b> or <b>fill isn't defined</b>. I looked online but couldn't find a similar problem. I tried to add in the code in the draw function (that seemed like a good temparary solution becuase the fucntion is only written once and a for loop calls it repeatdly). However, when I tried to run it I got an erro; <b>Bakcground not defined</b>. This was intresting becuase it used to work fine, and I realized that I need to add <b>p.</b> before those the p5js functions I used for each canvas, so I recreated the CreateCat function with all the <b>p.</b> and it worked.<br> [Here is the current website.](https://nouf-alabbasi.github.io/fall-2022_connection-lab/project_1/draft_7/index.html) and after fixing the html [here](https://nouf-alabbasi.github.io/fall-2022_connection-lab/project_1/draft_8/index.html) is how it looks!
+([my innetial code is here](https://nouf-alabbasi.github.io/fall-2022_connection-lab/project_1/draft_6/index.html))I faced a problem where when I added in my  CreateCat function I was getting things like <b>StrokeWeight not defined</b> or <b>fill isn't defined</b>. I looked online but couldn't find a similar problem. I tried to add in the code in the draw function (that seemed like a good temparary solution becuase the fucntion is only written once and a for loop calls it repeatdly). However, when I tried to run it I got an erro; <b>Bakcground not defined</b>. This was intresting becuase it used to work fine, and I realized that I need to add <b>p.</b> before those the p5js functions I used for each canvas, so I recreated the CreateCat function with all the <b>p.</b> and it worked.<br> [Here is the website at this stage.](https://nouf-alabbasi.github.io/fall-2022_connection-lab/project_1/draft_7/index.html) and after fixing the html [here](https://nouf-alabbasi.github.io/fall-2022_connection-lab/project_1/draft_8/index.html) is how it looks!
 
 
 #### accessing data from the json file within the p5js code
-The other idea was to create a carousel like element with buttons that could be increment and reduced an "index" value. and the "index" value would serve to represent the index of the row to be accesed.<br>
-another issue here was that I so far can't access the vairables used in the fetch function in the p5js code. I tried to create a global variable that would redfined locally but as expected that variable definition was only local. <br>
+An issue I faced in this step was that I wasn't able to access the vairables used in the fetch function in the p5js code. After trying many ways to try and access the information from google sheets I settled on accessing it by calling the json file within the p5js code<br>
 
 ## design aspects
 ### initial wireframe
