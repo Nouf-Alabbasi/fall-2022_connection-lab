@@ -7,6 +7,8 @@ window.addEventListener("load", ()=> {
   let greeting_txt = document.getElementById("greeting_txt");
   let greeting_txt_overall = document.getElementById("greeting");
 
+  
+
   greeting_button.addEventListener('click',  function(){
     greeting_counter += 1;
     if (greeting_counter == 1)
@@ -20,7 +22,38 @@ window.addEventListener("load", ()=> {
     }
   });
 
+  ///////////////////draw preview
+  createP5(true);
+  let fur_color = document.getElementById("fur_color");
+  let ear_1 = document.getElementById("ear_1");
+  let ear_2 = document.getElementById("ear_2");
+  let eye_rt = document.getElementById("eye_rt");
+  let eye_lft = document.getElementById("eye_lft");
+  let nose_clr = document.getElementById("nose_clr");
+
+  fur_color.addEventListener('change', ()=>{
+    createP5(true);
+  })
   
+  ear_1.addEventListener('change', () => {
+    createP5(true);
+  })
+
+  ear_2.addEventListener('change', () => {
+    createP5(true);
+  })
+  eye_rt.addEventListener('change', () => {
+    createP5(true);
+  })
+
+  eye_lft.addEventListener('change', () => {
+    createP5(true);
+  })
+  nose_clr.addEventListener('change', () => {
+    createP5(true);
+  })
+////////////////////////////////////////////////
+
   let refreshButton = document.getElementById("create_cat");
   refreshButton.addEventListener('click',  function(){
     if (clicked == 0)
@@ -41,7 +74,9 @@ window.addEventListener("load", ()=> {
 });
 
 var canvas = null;
-function createP5 (){
+function createP5 (status){        //////////////////////////////////////draw preview//////////
+    // let canvasWidth = document.getElementById("widthInput").value;
+    // let canvasHeight = document.getElementById("heightInput").value;
 
       let posX = 400/2;
       let posY = 400/2;
@@ -53,7 +88,16 @@ function createP5 (){
       let eye_rt = document.getElementById("eye_rt").value;
       let eye_lft = document.getElementById("eye_lft").value;
       let nose_clr = document.getElementById("nose_clr").value;
+      
       let bkg_clr = "#F6F4D2";
+
+      ///////////////////draw preview//////////////////////////////////////////////
+      if(status) {
+        canvas = null;
+        document.getElementById('canvas-div').innerHTML  = '';
+      
+      }
+    /////////////////////////////////////////////////////////////////////
   {
     if (canvas === null){
       canvas = new p5(function (p) {
