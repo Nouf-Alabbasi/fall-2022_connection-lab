@@ -76,7 +76,7 @@ canvas = new p5(function (p) {
 
 #### accessing data from the json file within the p5js code
 The other idea was to create a carousel like element with buttons that could be increment and reduced an "index" value. and the "index" value would serve to represent the index of the row to be accesed.<br>
-another issue here was that I so far can't access the vairables used in the fetch function in the p5js code. I tried to create a global variable that would redfined locally but as expected that variable definition was only local. <br>
+another issue here was that I so far can't access the vairables used in the fetch function in the p5js code. <br>
 
 ## design aspects
 ### initial wireframe
