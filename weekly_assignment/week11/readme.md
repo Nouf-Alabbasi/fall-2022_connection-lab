@@ -31,3 +31,11 @@ Another thing I wanted to do was to allow the shapes to be looked at from all an
   <a-camera> </a-camera>
 '''
 
+I was able to add texture to the shapes by adding the texture imgs as an asset then adding it in the shape as a src
+'''
+<a-assets>
+<img id="cone" crossorigin="anonymous" src="https://t3.ftcdn.net/jpg/01/22/71/42/360_F_122714277_FjVC7634ONpqXEne04b98SnscDgjAs1G.jpg">
+</a-assets>
+...
+<a-cone .... src="#cone"></a-cone>
+'''
