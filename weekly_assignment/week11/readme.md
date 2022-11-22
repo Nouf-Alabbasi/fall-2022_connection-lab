@@ -1,4 +1,5 @@
-
+I wanted to explore Aframe.
+here are some things I tried to do while exploring.
 I thought I would be able to create the Aframe object in a part of the screen and have regular html under it so that the user can scroll down to the site, but that wasn't possible. I tried to do this by placeing the shapes in a div and defining the height of that div, then adding a div under it to check if I could scroll down to the second div.
 ''' 
 <style>
