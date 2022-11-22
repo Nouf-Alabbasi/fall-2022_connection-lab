@@ -4,16 +4,19 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
+		<a-assets>
 
-			<div id = "shapes">
-			<a-scene>
-				<a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-				<a-sphere position="0 2 -5" radius="1.65" color="#EF2D5E"></a-sphere>
-				<a-cone position="0 0.2 -3"  rotation="0 90 180" radius="0.1" height="3" color="#FFC65D"></a-cone>
-				<!-- <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane> -->
-				<a-sky color="#ECECEC"></a-sky>
-			</a-scene>
-		</div>
+			<img id="ice_creame" crossorigin="anonymous" src="https://thumbs.dreamstime.com/b/vanilla-ice-cream-texture-background-top-view-163503703.jpg">
+			<img id="cone" crossorigin="anonymous" src="https://t3.ftcdn.net/jpg/01/22/71/42/360_F_122714277_FjVC7634ONpqXEne04b98SnscDgjAs1G.jpg">
+		</a-assets>
+
+		<a-scene>
+			<a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+			<a-sphere position="0 2 -5" radius="1.65" color="#FFFFF" src="#ice_creame" material=" repeat:2 3"></a-sphere>
+			<a-cone position="0 0.2 -3"  rotation="0 90 180" radius="0.1" height="3" color="#fec89a" src="#cone"></a-cone>
+			<!-- <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane> -->
+			<a-sky color="#ECECEC"></a-sky>
+		</a-scene>
 	</body>
 </html>
 

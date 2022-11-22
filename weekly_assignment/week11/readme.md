@@ -26,5 +26,8 @@ I thought I would be able to create the Aframe object in a part of the screen an
 
 ''' 
 
-Another thing I wanted to do was to allow the shapes to be looked at from all angles.
-some thing like [this](https://aframe.io/examples/showcase/modelviewer/)
+Another thing I wanted to do was to allow the shapes to be looked at from all angles. (some thing like [this](https://aframe.io/examples/showcase/modelviewer/)). However I didn't manage to get that to work. I looked at a few pieces of code that had the feature I wanted but didn't manage to find the tag/feature that controlled the user's ability to grab the shape and rotate it. I tried to follow [this](https://stackoverflow.com/questions/65525381/a-frame-super-hands-rotate-grabbed-object) but it wasn't what I wanted to do. I think that what I want to do has to do with the camera tag, but I am not sure.
+'''
+  <a-camera> </a-camera>
+'''
+
